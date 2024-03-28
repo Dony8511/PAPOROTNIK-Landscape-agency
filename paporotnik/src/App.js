@@ -1,23 +1,15 @@
-import logo from './logo.svg';
-import './App.css';
-
+import logo from './img/Logo.png';
+import './css/index.scss';
+import Button from "./components/button/button";
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <div className="container">
+          <img src={logo} className="logo" alt="logo" />
+          <Button variant="dark" text="Button" link="#" />
+      {/*    ВАРИАНТЫ КНОПОК: "dark","dark-outline","white","white-outline"*/}
+      {/*    ЕСЛИ БУДЕТ КАКАЯТО ОШИБКА ИЗ ЗА СЦСС ТО НАПИШИ 'npm i sass' */}
+      </div>
     </div>
   );
 }
