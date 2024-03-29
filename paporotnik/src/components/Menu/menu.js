@@ -1,5 +1,6 @@
 import React, {Component} from 'react';
 import './menu.scss';
+
 class Menu extends Component {
     render() {
         return (
@@ -7,17 +8,17 @@ class Menu extends Component {
                 <a className="menu-button icon-plus" id="open-menu" href="#menu" title="Show navigation"></a>
                 <a className="menu-button icon-minus" href="#0" title="Hide navigation"></a>
                 <li className="menu-item one">
-                    <a href="#menu">
+                    <a href="/blog">
                         <span className="fa fa-linkedin"></span>
                     </a>
                 </li>
                 <li className="menu-item two">
-                    <a href="#menu">
+                    <a href="/">
                         <span className="fa fa-instagram"></span>
                     </a>
                 </li>
                 <li className="menu-item three">
-                    <a href="#menu">
+                    <a href="/portfolio">
                         <span className="fa fa-twitter"></span>
                     </a>
                 </li>

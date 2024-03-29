@@ -18,6 +18,8 @@ function App() {
             </header>
             <Routes>
                 <Route path='/' element={<Main/>}/>
+                <Route path='/portfolio' element={<Main/>}/>
+                <Route path='/blog' element={<Main/>}/>
             </Routes>
         </div>
     );

@@ -24,6 +24,11 @@
   background-size: 100%;
   overflow: hidden;
   text-decoration: none;
+  transition: all .16s ease-in;
+
+  &:hover {
+    scale: 1.1;
+  }
 }
 
 #menu:not(:target) > a:first-of-type,
@@ -42,7 +47,7 @@
 }
 
 .two {
-  background-image: url("/img/menu2.png");
+  background-image: url("/img/menu4.png");
 }
 
 .three {
