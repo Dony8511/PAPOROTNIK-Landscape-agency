@@ -23,7 +23,7 @@ class Main extends Component {
                                 Ландшафтное агентство PAPOROTNIK за 15 лет работы стало ведущим агентством на рынке
                                 ландшафтного дизайна и в данный момент работает с самыми требовательными заказчиками.
                             </p>
-                            <Button variant="dark-outline" text="Подробнее" link="#"/>
+                            <Button variant="dark-outline f" text="Подробнее" link="#"/>
                         </div>
                     </div>
                 </div>
