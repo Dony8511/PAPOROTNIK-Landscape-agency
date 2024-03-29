@@ -40,12 +40,15 @@
 .one {
   background-image: url("/img/menu2.png");
 }
+
 .two {
   background-image: url("/img/menu2.png");
 }
+
 .three {
   background-image: url("/img/menu3.png");
 }
+
 .menu-item {
   width: 55px;
   height: 55px;
@@ -54,15 +57,20 @@
   top: 10px;
   border-radius: 50%;
   transform: translate(0px, 0px);
-  transition: transform 500ms;
+  transition: transform .12s ease-out, scale .05s ease-in, opacity .05s ease-in;
   z-index: -2;
-  transition: .5s;
-  cursor: pointer;
-}
+  transition-delay: 0s !important;
 
-.menu-item:hover {
-  opacity: 0.5;
-  box-shadow: 0 5px 10px black;
+  cursor: pointer;
+
+  &:hover {
+    opacity: 0.65;
+    scale: 1.05;
+    filter: dropShadow(0 5px 10px black);
+    transition-delay: 0s !important;
+
+    //box-shadow: ;
+  }
 }
 
 
