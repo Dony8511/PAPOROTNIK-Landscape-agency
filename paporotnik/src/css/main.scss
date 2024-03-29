@@ -1,29 +1,40 @@
-.content {
+.FirstBlock {
   display: flex;
   flex-direction: row;
-}
-.album {
-  display: flex;
-  flex-direction: row;
-  width: 1000px;
   justify-content: space-between;
 }
+
+.album {
+  position: relative;
+  left: -60px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 20px;
+}
+
 .offer {
+  padding-right: 40px;
+  text-align: right;
   display: flex;
   flex-direction: column;
+  justify-items: right;
+  max-width: 400px;
+  .offer-text{
+    margin-bottom: 25px;
+  }
 }
+
 .pic {
   transition: all .15s ease-in;
+  object-fit: cover;
   width: 396px;
   height: 264px;
   border-radius: 8px;
   filter: drop-shadow(0px 13px 29px rgba(97, 97, 97, 0.1)) drop-shadow(0px 119px 71px rgba(97, 97, 97, 0.05))
   drop-shadow(0px 211px 84px rgba(97, 97, 97, 0.01))  drop-shadow(0px 330px 92px rgba(97, 97, 97, 0));
-  &:hover {
-    width: 420px;
-    height: 320px;
-    z-index: 10;
+  &:nth-child(2) {
+    transform: scale(1.2);
+    z-index: 1;
   }
-
-
 }

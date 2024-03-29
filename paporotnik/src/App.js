@@ -9,13 +9,13 @@ import React from "react";
 function App() {
     return (
         <div className="App">
-            <div className="header">
-                <img src={logo} className="logo" alt="logo"/>
+            <header>
+                <a href="/"><img src={logo} className="logo" alt="logo"/></a>
                 <Menu/>
                 {/*<Button variant="dark" text="Button" link="#"/>*/}
                 {/*    ВАРИАНТЫ КНОПОК: "dark","dark-outline","white","white-outline"*/}
                 {/*    ЕСЛИ БУДЕТ КАКАЯТО ОШИБКА ИЗ ЗА СЦСС ТО НАПИШИ 'npm i scss' */}
-            </div>
+            </header>
             <Routes>
                 <Route path='/' element={<Main/>}/>
             </Routes>
