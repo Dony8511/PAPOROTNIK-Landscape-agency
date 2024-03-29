@@ -1,0 +1,29 @@
+.content {
+  display: flex;
+  flex-direction: row;
+}
+.album {
+  display: flex;
+  flex-direction: row;
+  width: 1000px;
+  justify-content: space-between;
+}
+.offer {
+  display: flex;
+  flex-direction: column;
+}
+.pic {
+  transition: all .15s ease-in;
+  width: 396px;
+  height: 264px;
+  border-radius: 8px;
+  filter: drop-shadow(0px 13px 29px rgba(97, 97, 97, 0.1)) drop-shadow(0px 119px 71px rgba(97, 97, 97, 0.05))
+  drop-shadow(0px 211px 84px rgba(97, 97, 97, 0.01))  drop-shadow(0px 330px 92px rgba(97, 97, 97, 0));
+  &:hover {
+    width: 420px;
+    height: 320px;
+    z-index: 10;
+  }
+
+
+}

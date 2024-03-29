@@ -18,19 +18,11 @@ body{
     margin: 0 auto;
     padding-top: 20px;
 }
-.container{
-    /*width: 1520px;*/
-    /*max-width: 1520px;*/
-    /*margin: 0 auto;*/
-
-
+.container {
     margin-left: 40px;
     margin-right: 40px;
-
     border-left: 2pt dashed;
     border-right: 2pt dashed;
-
-
-    //height: 100vh; //временное св-во для наглядности
-
+    height: 1000px;
+    margin-top: -40px;
 }
