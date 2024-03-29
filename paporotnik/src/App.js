@@ -1,6 +1,6 @@
 import logo from './img/Logo.png';
 import './css/index.scss';
-import {BrowserRouter as Router, Routes, Route} from 'react-router-dom';
+import {Routes, Route} from 'react-router-dom';
 import Button from "./components/button/button";
 
 function App() {
