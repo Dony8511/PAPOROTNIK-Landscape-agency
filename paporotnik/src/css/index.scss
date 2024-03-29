@@ -21,28 +21,29 @@ body {
 
 header {
   //margin-bottom: 40px;
-  margin-left: 40px;
-  margin-right: 40px;
-  border-left: 2pt dashed;
-  border-right: 2pt dashed;
+  margin-left: 3vw;
+  margin-right: 3vw;
+  border-left: 0.2vw dashed;
+  border-right: 0.2vw dashed;
 }
 
 .logo {
   display: block;
   margin: 0 auto;
-  padding-top: 20px;
+  padding-top: 1.4vw;
+  width: 30%;
 }
 
 .container {
-  margin-left: 40px;
-  margin-right: 40px;
-  border-left: 2pt dashed;
-  border-right: 2pt dashed;
+  margin-left: 3vw;
+  margin-right: 3vw;
+  border-left: 0.2vw dashed;
+  border-right: 0.2vw dashed;
   height: fit-content;
   //margin-top: -40px;
   &.offer-cont {
-    padding-top: 150px;
-    padding-bottom: 150px;
+    padding-top: 11vw;
+    padding-bottom: 11vw;
 
   }
 
@@ -59,11 +60,11 @@ header {
 
 h2 {
   margin: 0;
-  font-size: 52px;
+  font-size: 3.7vw;
   font-weight: 700;
 }
 
 p {
-  font-size: 20px;
+  font-size: 1.4vw;
   font-weight: 300;
 }
