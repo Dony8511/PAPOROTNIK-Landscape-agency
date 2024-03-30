@@ -9,11 +9,6 @@
 }
 
 .menu-button {
-  opacity: 0;
-  z-index: -1;
-}
-
-.menu-button {
   width: 2.8646vw;
   height: 2.8646vw;
   position: fixed;
@@ -25,7 +20,7 @@
   overflow: hidden;
   text-decoration: none;
   transition: all .16s ease-in;
-
+  transition-delay: 0s !important;
   &:hover {
     scale: 1.1;
   }

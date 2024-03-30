@@ -3,7 +3,7 @@ import './../css/main.scss';
 import pic1 from './../img/unsplash_pYyOZ8q7AII.png'
 import pic2 from './../img/unsplash_28c3pajQlyI.png'
 import pic3 from './../img/unsplash_zacucUA5LhE.png'
-
+import wave_btn from './../img/svgSVG.svg'
 import Button from "../components/button/button";
 
 class Main extends Component {
@@ -27,10 +27,15 @@ class Main extends Component {
                         </div>
                     </div>
                 </div>
-                <div className="container darkSection">
-                    asasfdasfd
-                    {/*<img src= alt=""/>*/}
+                <div className="dashed-line"></div>
+                <div className="d">
+                    <a><span className='c e'>Расчёт</span><img src={wave_btn} className='wave a'/></a>
+                    <a><span className='c f'>Услуги</span><img src={wave_btn} className='wave b'/></a>
                 </div>
+                <div className="container darkSection">
+
+                </div>
+
             </>
         );
     }

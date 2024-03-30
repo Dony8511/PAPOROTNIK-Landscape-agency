@@ -1,7 +1,7 @@
 .FirstBlock {
   display: flex;
   flex-direction: row;
-  gap: 12vw;
+  gap: 14.5vw;
 }
 
 .album {
@@ -39,4 +39,43 @@
     transform: scale(1.2);
     z-index: 1;
   }
+}
+.dashed-line {
+  width: 100%;
+  border-bottom: 0.18vw dashed;
+  margin-top: -2.0833vw;
+  margin-bottom: -3.8vw;
+  z-index: -100;
+}
+.wave {
+  position: relative;
+  top: 1.3vw;
+  width: 35vw;
+}
+.a {
+  filter: invert(0.2);
+  transform: translateY(0.7vw);
+}
+.b {
+  left: -23vw;
+  z-index: 4;
+}
+.d a .c {
+  color: white;
+  font-size: 1.25vw;
+  position: relative;
+  font-family: "Montserrat", sans-serif;
+}
+.d a {
+  cursor: pointer;
+}
+.d a .e {
+  left: 19vw;
+  top: -0.7vw;
+  z-index: 1;
+}
+.d a .f {
+  left: -3.5vw;
+  top: -0.7vw;
+  z-index: 5;
 }

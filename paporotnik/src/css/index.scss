@@ -43,7 +43,7 @@ header {
   //margin-top: -40px;
   &.offer-cont {
     padding-top: 11vw;
-    padding-bottom: 11vw;
+    padding-bottom: 14vw;
 
   }
 
@@ -52,8 +52,10 @@ header {
     color: white;
     background-color: black;
     margin: 0;
-    padding: 60px 40px;
-
+    padding: 3.1250vw 2.0833vw;
+    background-image: url("../img/grainBg.png");
+    z-index: 0;
+    position: relative;
   }
 
 }
