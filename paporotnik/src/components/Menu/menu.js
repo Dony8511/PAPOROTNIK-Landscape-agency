@@ -5,21 +5,21 @@ class Menu extends Component {
     render() {
         return (
             <ul id="menu">
-                <a className="menu-button icon-plus" id="open-menu" href="#menu" title="Show navigation"></a>
+                <a className="menu-button icon-plus" id="open-menu" href="#menu"></a>
                 <a className="menu-button icon-minus" href="#0" title="Hide navigation"></a>
                 <li className="menu-item one">
                     <a href="/blog">
-                        <span className="fa fa-linkedin"></span>
+                        <span className="fa blog"></span>
                     </a>
                 </li>
                 <li className="menu-item two">
                     <a href="/">
-                        <span className="fa fa-instagram"></span>
+                        <span className="fa root"></span>
                     </a>
                 </li>
                 <li className="menu-item three">
                     <a href="/portfolio">
-                        <span className="fa fa-twitter"></span>
+                        <span className="fa portfolio"></span>
                     </a>
                 </li>
             </ul>

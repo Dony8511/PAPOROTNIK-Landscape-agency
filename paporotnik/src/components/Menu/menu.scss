@@ -14,8 +14,8 @@
 }
 
 .menu-button {
-  width: 4vw;
-  height: 4vw;
+  width: 2.8646vw;
+  height: 2.8646vw;
   position: fixed;
   left: 3vw;
   top: 0.8vw;
@@ -56,8 +56,8 @@
 
 .menu-item {
   background-size: cover;
-  width: 4vw;
-  height: 4vw;
+  width: 2.8646vw;
+  height: 2.8646vw;
   position: fixed;
   left: 3vw;
   top: 0.8vw;
@@ -81,6 +81,9 @@
 
 
 .menu-item a {
+  width: fit-content;
+  height: fit-content;
+  z-index: 999;
   color: #fff;
   position: relative;
   top: 30%;
@@ -89,16 +92,16 @@
 }
 
 #menu:target > .menu-item:nth-child(5) {
-  transform: translateY(5vw) translateX(-0.7vw);
+  transform: translateY(3.5vw) translateX(-0.7vw);
   transition-delay: 0.3s;
 }
 
 #menu:target > .menu-item:nth-child(3) {
-  transform: translateY(4vw) translateX(4vw);
+  transform: translateY(2.4vw) translateX(2.4vw);
   transition-delay: 0.2s;
 }
 
 #menu:target > .menu-item:nth-child(4) {
-  transform: translateY(-0.7vw) translateX(5vw);
+  transform: translateY(-0.7vw) translateX(3.5vw);
   transition-delay: 0.1s;
 }

@@ -5,6 +5,7 @@ import Button from "./components/button/button";
 import Main from "./pages/Main";
 import Menu from "./components/Menu/menu";
 import React from "react";
+import Portfolio from "./pages/Portfolio";
 
 function App() {
     return (
@@ -18,7 +19,7 @@ function App() {
             </header>
             <Routes>
                 <Route path='/' element={<Main/>}/>
-                <Route path='/portfolio' element={<Main/>}/>
+                <Route path='/portfolio' element={<Portfolio/>}/>
                 <Route path='/blog' element={<Main/>}/>
             </Routes>
         </div>

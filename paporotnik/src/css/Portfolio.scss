@@ -1,0 +1,32 @@
+.title-to-center {
+  text-align: center !important;
+  padding-top: 120px;
+  padding-bottom: 100px;
+  //width: 100%;
+}
+
+.year {
+  padding-left: 40px;
+}
+
+.card {
+  width: 400px;
+  height: 450px;
+
+  h3.card-title {
+    width: 100%;
+    font-weight: 700;
+    font-size: 54px;
+    text-align: left;
+    color: white;
+  }
+
+  p.card-descp {
+    max-height: 40px;
+    width: 100%;
+    font-weight: 300;
+    font-size: 18px;
+    color: white;
+    text-overflow: ellipsis;
+  }
+}
