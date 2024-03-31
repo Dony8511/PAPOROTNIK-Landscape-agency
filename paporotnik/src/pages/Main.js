@@ -28,9 +28,9 @@ class Main extends Component {
                     </div>
                 </div>
                 <div className="dashed-line"></div>
-                <div className="d">
-                    <a><span className='c e'>Расчёт</span><img src={wave_btn} className='wave a'/></a>
-                    <a><span className='c f'>Услуги</span><img src={wave_btn} className='wave b'/></a>
+                <div className="waveBtns">
+                    <a><span className='_span pricing_btn'>Расчёт</span><img src={wave_btn} className='wave pricing_wave'/></a>
+                    <a><span className='_span cards_btn'>Услуги</span><img src={wave_btn} className='wave  cards_wave'/></a>
                 </div>
                 <div className="container darkSection">
 

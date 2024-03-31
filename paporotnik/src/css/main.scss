@@ -51,30 +51,35 @@
   position: relative;
   top: 1.3vw;
   width: 35vw;
+  transition: all .2s ease-in;
+  &:hover{
+    transform: scaleX(1.08);
+  }
 }
-.a {
+.pricing_wave {
   filter: invert(0.2);
-  transform: translateY(0.7vw);
+  //top: -5;
+  //transform: translateY(0.7vw);
 }
-.b {
+.cards_wave{
   left: -23vw;
   z-index: 4;
 }
-.d a .c {
+.waveBtns a ._span {
   color: white;
   font-size: 1.25vw;
   position: relative;
   font-family: "Montserrat", sans-serif;
 }
-.d a {
+.waveBtns a {
   cursor: pointer;
 }
-.d a .e {
+.waveBtns a .pricing_btn {
   left: 19vw;
   top: -0.7vw;
   z-index: 1;
 }
-.d a .f {
+.waveBtns a .cards_btn {
   left: -3.5vw;
   top: -0.7vw;
   z-index: 5;
