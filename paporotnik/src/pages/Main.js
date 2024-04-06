@@ -33,10 +33,15 @@ class Main extends Component {
                     <a><span className='_span cards_btn'>Услуги</span><img src={wave_btn} className='wave  cards_wave'/></a>
                 </div>
                 <div className="container darkSection">
+                    <div className="types">
 
+                    </div>
                 </div>
 
             </>
+
+
+
         );
     }
 }
