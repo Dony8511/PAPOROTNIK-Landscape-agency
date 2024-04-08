@@ -10,11 +10,39 @@
 }
 
 .card {
+  flex-shrink: 0;
+
+  border-radius: 8px;
+  padding-top: 16px;
+  .texts{
+    padding: 12px;
+
+  }
+  .flexable {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+
+  img {
+    top: -120%;
+    object-fit: cover;
+    width: 100%;
+    height: fit-content;
+    position: relative;
+    z-index: -10;
+  }
+
   width: 400px;
   height: 450px;
 
+  overflow: hidden;
+
   h3.card-title {
-    width: 100%;
+    position: relative;
+    width: 90%;
     font-weight: 700;
     font-size: 54px;
     text-align: left;
@@ -27,6 +55,57 @@
     font-weight: 300;
     font-size: 18px;
     color: white;
+    line-height: 110%;
+    //white-space: normal;
+    overflow: hidden;
     text-overflow: ellipsis;
+    //text-overflow: ellipsis;
+
+  }
+}
+
+.Rating_star {
+  cursor: pointer;
+  &:hover{
+    scale: 1.08;
+  }
+}
+.starbtn{}
+.ratings{
+  text-align: right;
+  align-items: flex-end;у т
+  background-color: rgba(0,0,0, 0.45);
+  backdrop-filter: blur(4px);
+  border-radius: 8px;
+  .likes_count{
+    font-weight: 400;
+  }
+
+  position: relative;
+  left: 290px;
+  margin-right: 16px;
+  display: flex;
+  color: white;
+  justify-content: flex-end;
+  width: fit-content;
+  gap: 12px;
+  padding: 8px;
+}
+.cards-wrapper{
+  padding-left: 40px;
+  display: flex;
+  gap: 40px;
+  flex-wrap: nowrap;
+  overflow-x: scroll;
+  &::-webkit-scrollbar {
+    height: 12px;               /* ширина scrollbar */
+  }
+  &::-webkit-scrollbar-track {
+    background: transparent;        /* цвет дорожки */
+  }
+  &::-webkit-scrollbar-thumb {
+    background-color: black;    /* цвет плашки */
+    border-radius: 20px;       /* закругления плашки */
+    border: 3px solid white;  /* padding вокруг плашки */
   }
 }
