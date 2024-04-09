@@ -4,8 +4,14 @@ h2, h1, h3, h4, h5, p {
   margin: 0;
   padding: 0;
 }
-
+*::selection{
+  background-color: rgba(200,200, 200, 0.65);
+}
+img::selection{
+  background-color: transparent !important;
+}
 body {
+
   margin: 0;
   padding: 0;
   text-decoration: none;
@@ -17,6 +23,18 @@ body {
 
   background-image: url("../img/grainBg.png");
   background-color: #f3f0ee;
+
+  &::-webkit-scrollbar {
+    width: 8px;               /* ширина scrollbar */
+  }
+  &::-webkit-scrollbar-track {
+    background: transparent;        /* цвет дорожки */
+  }
+  &::-webkit-scrollbar-thumb {
+    background-color: black;    /* цвет плашки */
+    border-radius: 20px;       /* закругления плашки */
+    border: 2px solid white;  /* padding вокруг плашки */
+  }
 }
 
 header {
@@ -69,4 +87,43 @@ h2 {
 p {
   font-size: 1.0417vw;
   font-weight: 300;
+}
+
+footer{
+  padding-top: 2.1250vw;
+  padding-bottom: 2.1250vw;
+  text-align: left;
+  align-items: center;
+  width: 100%;
+  background-color: black;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  a{
+    text-decoration: none;
+    color: white;
+  }
+  .names{
+    &.pr{
+      padding-right: 2.0833vw;
+
+    }
+  }
+  p{
+    &.pl{
+      padding-left: 2.0833vw;
+    }
+
+    &.f_logo{
+      font-size: 2.8125vw;
+      font-weight: 700;
+
+    }
+  }
+
+}
+.group{
+  display: flex;
+  align-items: center;
+  gap: 18px;
 }

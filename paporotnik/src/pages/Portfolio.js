@@ -6,6 +6,8 @@ import card2 from './../img/portfolio/card2.png'
 import card3 from './../img/portfolio/card3.png'
 import card4 from './../img/portfolio/card4.png'
 
+import icon from './../img/portfolio/Vector.svg'
+
 class Portfolio extends Component {
     render() {
         return (
@@ -19,29 +21,71 @@ class Portfolio extends Component {
                         text='Description Description Description Description Description Description Description Description Description'
                     />
                     <Card
-                        title='PROJECT#1'
+                        title='PROJECT#2'
+                        img={card2}
+                        text='Description Description Description Description Description Description Description Description Description'
+                    />
+                    <Card
+                        title='PROJECT#3'
+                        img={card3}
+                        text='Description Description Description Description Description Description Description Description Description'
+                    />
+                    <Card
+                        title='PROJECT#4'
+                        img={card4}
+                        text='Description Description Description Description Description Description Description Description Description'
+                    />
+                    <Card
+                        title='PROJECT#5'
                         img={card1}
                         text='Description Description Description Description Description Description Description Description Description'
                     />
                     <Card
+                        title='PROJECT#6'
+                        img={card1}
+                        text='Description Description Description Description Description Description Description Description Description'
+                    />
+                </div>
+
+                <h2 className='year'>2023</h2>
+                <div className="cards-wrapper">
+                    <Card
                         title='PROJECT#1'
+                        img={card4}
+                        text='Description Description Description Description Description Description Description Description Description'
+                    />
+                    <Card
+                        title='PROJECT#2'
+                        img={card3}
+                        text='Description Description Description Description Description Description Description Description Description'
+                    />
+                    <Card
+                        title='PROJECT#3'
+                        img={card2}
+                        text='Description Description Description Description Description Description Description Description Description'
+                    />
+                    <Card
+                        title='PROJECT#4'
                         img={card1}
                         text='Description Description Description Description Description Description Description Description Description'
                     />
                     <Card
-                        title='PROJECT#1'
-                        img={card1}
+                        title='PROJECT#5'
+                        img={card4}
                         text='Description Description Description Description Description Description Description Description Description'
                     />
                     <Card
-                        title='PROJECT#1'
+                        title='PROJECT#6'
                         img={card1}
                         text='Description Description Description Description Description Description Description Description Description'
                     />
-                    <Card
-                        title='PROJECT#1'
-                        img={card1}
-                        text='Description Description Description Description Description Description Description Description Description'
+                </div>
+
+                <h2 className='year'>НАГРАДЫ И ДОСТИЖЕНИЯ</h2>
+                <div className="cards-wrapper">
+                    <CardAlt
+                        title='Награда #1'
+                        img={icon}
                     />
                 </div>
             </>
@@ -66,20 +110,30 @@ class Card extends Component {
     }
 }
 
+class CardAlt extends Component {
+    render() {
+        return (
+            <div className="cardAlt">
+                <h3 className="card-title">{this.props.title}</h3>
+                <img src={this.props.img} alt="" className="card-icon"/>
+            </div>
+        );
+    }
+}
+
 function Ratings() {
     const initialLikes = Math.floor(Math.random() * 10001);
     let [likes, setLikes] = useState(initialLikes);
-    const [prevLikes, setPrevLikes] = useState(initialLikes-1);
+    const [prevLikes, setPrevLikes] = useState(initialLikes - 1);
     console.log('--------beforeclick---------');
     console.log(initialLikes);
     console.log(prevLikes);
     console.log(likes);
     const toggleLike = () => {
         if (likes <= initialLikes) {
-            setLikes(prevLikes => prevLikes+1);
+            setLikes(prevLikes => prevLikes + 1);
             setPrevLikes(prevLikes);
-        }
-        else if(likes > initialLikes) {
+        } else if (likes > initialLikes) {
             setLikes(prevLikes => prevLikes === prevLikes ? prevLikes - 1 : prevLikes);
         }
         console.log('--------afterclick---------');
