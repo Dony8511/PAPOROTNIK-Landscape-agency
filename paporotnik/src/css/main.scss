@@ -56,6 +56,10 @@
     transform: scaleX(1.05);
   }
 }
+.selectedWave{
+  z-index: 4;
+  filter: none !important;
+}
 .pricing_wave {
   filter: invert(0.2);
   transform: scaleY(0.90);
@@ -63,8 +67,12 @@
   top: 1.52vw;
 }
 .cards_wave{
+  filter: invert(0.2);
   left: -23vw;
-  z-index: 4;
+}
+._span{
+  z-index: 15 !important;
+
 }
 .waveBtns a ._span {
   color: white;
@@ -80,8 +88,112 @@
   top: -0.8vw;
   z-index: 1;
 }
+.waveBtns{
+  overflow: hidden;
+}
 .waveBtns a .cards_btn {
   left: -3.5vw;
   top: -0.7vw;
   z-index: 5;
+}
+.types{
+  display: flex;
+  justify-content: space-between;
+}
+.cardt{
+
+  border-radius: 8px;
+  padding: 16px;
+  max-width: 330px;
+  max-height: 400px;
+  h3{
+    font-size: 38px;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  li{
+    font-size: 18px;
+  }
+}
+.cardb1{
+  background-image: url("./../img/card1.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  li:last-child{
+    display: none;
+  }
+}
+.cardb2{
+  background-image: url("./../img/card2.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  //li:last-child{
+  //  display: none;
+  //}
+}
+.cardb3{
+  background-image: url("./../img/card3.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  //li:last-child{
+  //  display: none;
+  //}
+}
+.cardb4{
+  background-color: white;
+  color: black;
+  h3{
+    background-image: url('./../img/textbg.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-weight: 900;
+    text-shadow: rgba(0, 0, 0, 0.25);
+    background-clip: text;
+    color: transparent;
+  }
+  li:last-child{
+   display: none;
+  }
+}
+.hiddenblock{
+  display: none !important;
+}
+
+.calculator{
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+  h3{
+    font-size: 62px;
+  }
+}
+.fade{
+  width: 110%;
+
+}
+/* Стили для выпадающего списка */
+.form {
+  display: flex;
+  flex-direction: column;
+  width: 500px;
+  gap: 20px;
+  input{
+    background-color: transparent;
+    border-bottom: white solid 1px;
+    outline: none;
+    height: 40px;
+    color: white;
+  }
+}
+
+#options {
+  padding: 10px;
+  font-size: 16px;
+}
+
+button {
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
 }

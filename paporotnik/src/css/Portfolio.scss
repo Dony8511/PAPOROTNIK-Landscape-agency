@@ -110,11 +110,30 @@
     border: 3px solid white;  /* padding вокруг плашки */
   }
 }
-
+.dontclip{
+  padding-top: 40px;
+  padding-bottom: 40px;
+  overflow: visible !important;
+}
 .cardAlt{
+  border-radius: 10px;
+  padding: 16px;
+  transition: all .16s ease-in;
+  &:hover{
+    scale: 1.1;
+  }
+  h3{
+    font-size: 32px;
+  }
   width: 280px;
   height: 390px;
-
+  box-shadow: 0px 0px 25px rgba(0,0,0,0.15);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  .card-icon{
+    width: 82px;
+  }
   h3.cardAlt{
     font-weight: 600;
     font-size: 32px;

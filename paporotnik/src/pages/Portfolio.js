@@ -82,9 +82,21 @@ class Portfolio extends Component {
                 </div>
 
                 <h2 className='year'>НАГРАДЫ И ДОСТИЖЕНИЯ</h2>
-                <div className="cards-wrapper">
+                <div className="cards-wrapper dontclip">
                     <CardAlt
                         title='Награда #1'
+                        img={icon}
+                    />                    <CardAlt
+                        title='Награда #2'
+                        img={icon}
+                    />                    <CardAlt
+                        title='Награда #3'
+                        img={icon}
+                    />                    <CardAlt
+                        title='Награда #4'
+                        img={icon}
+                    />                    <CardAlt
+                        title='Награда #5'
                         img={icon}
                     />
                 </div>
