@@ -5,7 +5,7 @@ h2, h1, h3, h4, h5, p {
   padding: 0;
 }
 *{
-  overflow-x: hidden;
+  //overflow-x: hidden;
   scroll-behavior: smooth !important;
 
 }
@@ -16,6 +16,8 @@ img::selection{
   background-color: transparent !important;
 }
 body {
+  overflow-x: hidden;
+
   margin: 0;
   padding: 0;
   text-decoration: none;

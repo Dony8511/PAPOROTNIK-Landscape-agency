@@ -1,0 +1,45 @@
+.post{
+  margin: 0 auto;
+  width: 1400px;
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 22px;
+  .contentpost{
+    margin-top: 30px;
+    margin-bottom: 30px;
+    display: flex;
+    gap: 60px;
+    img{
+      max-width: 300px;
+      border-radius: 8px;
+      object-fit: cover;
+    }
+  }
+  .postinfo{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+}
+.viewsd{
+  display: flex;
+  align-items: center;
+  gap: 20px;
+
+}
+.gropppp{
+  display: flex;
+  gap: 60px;
+}
+.likesd{
+  display: flex;
+  align-items: center;
+  gap: 20px;
+
+}
+.posts{
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  margin-bottom: 100px;
+}

@@ -6,6 +6,7 @@ import Main from "./pages/Main";
 import Menu from "./components/Menu/menu";
 import React from "react";
 import Portfolio from "./pages/Portfolio";
+import Blog from "./pages/blog";
 
 function App() {
     return (
@@ -20,7 +21,7 @@ function App() {
             <Routes>
                 <Route path='/' element={<Main/>}/>
                 <Route path='/portfolio' element={<Portfolio/>}/>
-                <Route path='/blog' element={<Main/>}/>
+                <Route path='/blog' element={<Blog/>}/>
             </Routes>
             <footer>
                 <p className="f_logo pl">PAPOROTNIK</p>
